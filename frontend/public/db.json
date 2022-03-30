@@ -1,0 +1,244 @@
+{
+    "Projects": [
+        {
+            "Name": "Maps SDK for Android",
+            "Description": "Maps for your native Android app.",
+            "About": "Add maps based on Google Maps data to your Android application with the Maps SDK for Android. The SDK automatically handles access to Google Maps servers, map display and response to user gestures such as clicks and drags.",
+            "Image": "https://lh3.googleusercontent.com/hY60u5DV3GEpY7ybMKykauvX49mLWeEG4L2Lb16qvFjAO6e5Pc-AI46bNDmfaHjf2CwFZQzPriI2qhSkrI8=w80-h80",
+            "Compatibility": "dom: ^2.1.2, boot: ^17.0.2, vitals: ^4.3.1, router-dom: ^5.2.0, scripts: 5.0.0",
+            "Documentation": "https://developers.google.com/search-ads"
+        },
+        {
+            "Name": "Maps SDK for iOS",
+            "Description": "Maps for your native iOS app.",
+            "About": "Add maps based on Google Maps data to your iOS application with the Maps SDK for iOS. The SDK automatically handles access to the Google Maps servers, map display and response to user gestures such as clicks and drags.",
+            "Image": "https://lh3.googleusercontent.com/Qy0LgMRKtu_-7hrOrP4Xz8S7xHPeFwiu_udP1f4Po_CTgNXtJOByBCVOB9d72VP8lUW9-o7Dt21vCen4rY3t=w80-h80",
+            "Compatibility": "dom: ^2.1.2, boot: ^17.0.2, vitals: ^4.3.1, router-dom: ^5.2.0, scripts: 5.0.0",
+            "Documentation": "https://developers.google.com/search-ads"
+        },
+        {
+            "Name": "Maps JavaScript API",
+            "Description": "Maps for your website",
+            "About": "Add a map to your website, providing imagery and local data from the same source as Google Maps. Style the map to suit your needs. Visualize your own data on the map, bring the world to life with Street View, and use services like geocoding and directions.",
+            "Image": "https://lh3.googleusercontent.com/EpyLchH-g-_fdOBM5uV7GzxfrhO2-mqJan33dksRDKlcIdt0yH7oVmUpHAKjwm_sRaJwzu7UFda32emEaQ=w80-h80",
+            "Compatibility": "dom: ^2.1.2, boot: ^17.0.2, vitals: ^4.3.1, router-dom: ^5.2.0, scripts: 5.0.0",
+            "Documentation": "https://developers.google.com/search-ads"
+        },
+        {
+            "Name": "Places API",
+            "Description": "Get detailed information about 100 million places",
+            "About": "Get data from the same database used by Google Maps. Places features over 100 million businesses and points of interest that are updated frequently through owner-verified listings and user-moderated contributions.",
+            "Image": "https://lh3.googleusercontent.com/aM04D4QrPf6q47d_lqt0ddjouD5Ilu64iBY0VEUmr99O3ITUMxT-f1erWZWT5qqBOcOqjYGGfx-_xeKZ38rd1g=w80-h80",
+            "Compatibility": "dom: ^2.1.2, boot: ^17.0.2, vitals: ^4.3.1, router-dom: ^5.2.0, scripts: 5.0.0",
+            "Documentation": "https://developers.google.com/search-ads"
+        },
+        {
+            "Name": "Roads API",
+            "Description": "Snap-to-road functionality to accurately trace GPS breadcrumbs.",
+            "About": "Snap GPS points to roads to identify the roads a vehicle was traveling along, making up for GPS error. Also lets developers access speed limits along those roads (enterprise-only feature).",
+            "Image": "https://lh3.googleusercontent.com/yD6i9phOUSNHlg6VLvJljG9y1d1GkNyVc6CkeTkcAqnpdgavCBuP1Hv9LIdYhjhrHN4B1OToVpgejvMeYZ4=w80-h80",
+            "Compatibility": "dom: ^2.1.2, boot: ^17.0.2, vitals: ^4.3.1, router-dom: ^5.2.0, scripts: 5.0.0",
+            "Documentation": "https://developers.google.com/search-ads"
+        },
+        {
+            "Name": "Directions API",
+            "Description": "Directions between multiple locations.",
+            "About": "Access driving, cycling, walking and public transportation routing with the Directions API using an HTTP request. Waypoints offer the ability to alter a route through a specific location. Specify origins, destinations and waypoints either as text strings (e.g. \"Chicago, IL\" or \"Darwin, NT, Australia\") or as latitude/longitude coordinates.",
+            "Image": "https://lh3.googleusercontent.com/mTryNYAfFsQ3RAped43oxE-FI9VD8iuyzLhirwtv0MuXjxD984xO67iGclTZmsulcAY2S_MKcz7l4ymfuNdU=w80-h80",
+            "Compatibility": "dom: ^2.1.2, boot: ^17.0.2, vitals: ^4.3.1, router-dom: ^5.2.0, scripts: 5.0.0",
+            "Documentation": "https://developers.google.com/search-ads"
+        },
+        {
+            "Name": "Dialogflow API",
+            "Description": "Builds conversational interfaces",
+            "About": "Builds conversational interfaces (for example, chatbots, and voice-powered apps and devices).",
+            "Image": "https://lh3.googleusercontent.com/Gem-Sk43j04beT8al5qQ96JMiK5syDI0uceZQEQhdkGt7YEogVsHuTZLS-FgpwByPL_f9KU7FKp4RZz0JHY-=w80-h80",
+            "Compatibility": "dom: ^2.1.2, boot: ^17.0.2, vitals: ^4.3.1, router-dom: ^5.2.0, scripts: 5.0.0",
+            "Documentation": "https://developers.google.com/search-ads"
+        },
+        {
+            "Name": "Cloud Vision API",
+            "Description": "Image Content Analysis",
+            "About": "Integrates Google Vision features, including image labeling, face, logo, and landmark detection, optical character recognition (OCR), and detection of explicit content, into applications.",
+            "Image": "https://lh3.googleusercontent.com/3WKZGqRmGOfmhuJs33YPibctQh15oxz76EA6n7mgZo5Fbx8qUWej2pIHZ0ia4MLI3gNcaQsy6btW09e8cwLXPQ=w80-h80",
+            "Compatibility": "dom: ^2.1.2, boot: ^17.0.2, vitals: ^4.3.1, router-dom: ^5.2.0, scripts: 5.0.0",
+            "Documentation": "https://developers.google.com/search-ads"
+        },
+        {
+            "Name": "Cloud Natural Language API",
+            "Description": "Provides natural language understanding technologies, such as sentiment analysis, entity\u00e2\u20ac\u00a6",
+            "About": "Provides natural language understanding technologies, such as sentiment analysis, entity recognition, entity sentiment analysis, and other text annotations, to developers.",
+            "Image": "https://lh3.googleusercontent.com/bPXTe1shu3W4yGF0wnRjaY7ZRmUrrUan2jv5grz--ihMFY-9AVFEawNdJfCoJ6Rd01fbATRjf2a94G_waN9d=w80-h80",
+            "Compatibility": "dom: ^2.1.2, boot: ^17.0.2, vitals: ^4.3.1, router-dom: ^5.2.0, scripts: 5.0.0",
+            "Documentation": "https://developers.google.com/search-ads"
+        },
+        {
+            "Name": "Cloud Speech-to-Text API",
+            "Description": "Speech recognition",
+            "About": "Converts audio to text by applying powerful neural network models.",
+            "Image": "https://lh3.googleusercontent.com/wmrbNBlqpQSWIlYDbyBsOxKXkT1igQU6qpOXopjRN5iyTaiqLSP0UiFeW-TbbO6Wes71-oFBa2x7B-_NFNM=w80-h80",
+            "Compatibility": "dom: ^2.1.2, boot: ^17.0.2, vitals: ^4.3.1, router-dom: ^5.2.0, scripts: 5.0.0",
+            "Documentation": "https://developers.google.com/search-ads"
+        },
+        {
+            "Name": "Cloud Translation API",
+            "Description": "Integrates text translation into your website or application.",
+            "About": "Integrates text translation into your website or application.",
+            "Image": "https://lh3.googleusercontent.com/w1QGh5p564_r4oMo3rsX6n1gvnt4A-jWNn3xSekpKbrPrQ23a5TmfLuMF4to0YszlBopUlnLAhs-g8nVZXC-=w80-h80",
+            "Compatibility": "dom: ^2.1.2, boot: ^17.0.2, vitals: ^4.3.1, router-dom: ^5.2.0, scripts: 5.0.0",
+            "Documentation": "https://developers.google.com/search-ads"
+        },
+        {
+            "Name": "AI Platform Training & Prediction API",
+            "Description": "An API to enable creating and using machine learning models.",
+            "About": "An API to enable creating and using machine learning models.",
+            "Image": "https://lh3.googleusercontent.com/M0GAbAGhMvegNp4k6o4G4lZPzptPzdy3I-u1vR4hlRlxAOJuGt8w88xzx0YAtfSe0AjWJ4ZaTO5GR_HN8F5-=w80-h80",
+            "Compatibility": "dom: ^2.1.2, boot: ^17.0.2, vitals: ^4.3.1, router-dom: ^5.2.0, scripts: 5.0.0",
+            "Documentation": "https://developers.google.com/search-ads"
+        },
+        {
+            "Name": "Google Drive API",
+            "Description": "The Google Drive API allows clients to access resources from Google Drive",
+            "About": "The Google Drive API allows clients to access resources from Google Drive.",
+            "Image": "https://lh3.googleusercontent.com/f4sDhGNGFnO38pNp-LVDXlpQmlr3kDE3RNciaImc_lUDpFysmw_9JI_KI1tiv6v0RYX0MErO0wxFuNJ0aawx5w=w80-h80",
+            "Compatibility": "dom: ^2.1.2, boot: ^17.0.2, vitals: ^4.3.1, router-dom: ^5.2.0, scripts: 5.0.0",
+            "Documentation": "https://developers.google.com/search-ads"
+        },
+        {
+            "Name": "Google Calendar API",
+            "Description": "Integrate with Google Calendar using the Calendar API.",
+            "About": "The Calendar API lets you display, create and modify calendar events as well as work with many other calendar-related objects, such as calendars or access controls.",
+            "Image": "https://lh3.googleusercontent.com/i6P9O38_14D9grtkTLbVhY_QZ_6Bvw8nWdlGW0yfzZV8lFE3Xi476lKTOyBGmGTw13wmmp5RLhD-qcapl2Yu=w80-h80",
+            "Compatibility": "dom: ^2.1.2, boot: ^17.0.2, vitals: ^4.3.1, router-dom: ^5.2.0, scripts: 5.0.0",
+            "Documentation": "https://developers.google.com/search-ads"
+        },
+        {
+            "Name": "Gmail API",
+            "Description": "Flexible, RESTful access to the user's inbox",
+            "About": "The Gmail API lets you view and manage Gmail mailbox data like threads, messages, and labels.",
+            "Image": "https://lh3.googleusercontent.com/3apmn5ZrO9g69LOLLshuSID-zQ99Z3q9bvJEWbj_rxaxS9p6K_rKEynb8wuYbxGuoFxWtWTUbuRFrHHfmM1g=w80-h80",
+            "Compatibility": "dom: ^2.1.2, boot: ^17.0.2, vitals: ^4.3.1, router-dom: ^5.2.0, scripts: 5.0.0",
+            "Documentation": "https://developers.google.com/search-ads"
+        },
+        {
+            "Name": "Google Sheets API",
+            "Description": "The Sheets API gives you full control over the content and appearence of your spreadsheet data.",
+            "About": "Reads and writes Google Sheets.",
+            "Image": "https://lh3.googleusercontent.com/-xu5E_hai4rCeSqcHcYMOj7n0w3lJeKLf9Qrg_Qe8BimWkthti5YfcEPN7F1EKa_IYgkPAqSuVgKDHVK3Gcu=w80-h80",
+            "Compatibility": "dom: ^2.1.2, boot: ^17.0.2, vitals: ^4.3.1, router-dom: ^5.2.0, scripts: 5.0.0",
+            "Documentation": "https://developers.google.com/search-ads"
+        },
+        {
+            "Name": "Google Workspace Marketplace SDK",
+            "Description": "A toolkit for integrating web applications with Google Workspace",
+            "About": "A toolkit for integrating web applications with Google Workspace.",
+            "Image": "https://lh3.googleusercontent.com/bDRCK-PUn22iv7iStumMtdqAC9AptFFl9JKz4jl32Mh0N-9l32_HhV_FlEhqUEqXMnLyDsaVyC9El4_lYzox=w80-h80",
+            "Compatibility": "dom: ^2.1.2, boot: ^17.0.2, vitals: ^4.3.1, router-dom: ^5.2.0, scripts: 5.0.0",
+            "Documentation": "https://developers.google.com/search-ads"
+        },
+        {
+            "Name": "Admin SDK API",
+            "Description": "Admin SDK lets administrators of enterprise domains to view and manage resources like user,\u00e2\u20ac\u00a6",
+            "About": "Admin SDK lets administrators of enterprise domains to view and manage resources like user, groups etc. It also provides audit and usage reports of domain.",
+            "Image": "https://lh3.googleusercontent.com/3vr_P6XN36MA5ZqaMVWoJGXau7eVFUd8C-DmxD_L2Wx8C9dy81mX38OkYDAKcThL3dtfB1y2K_-DZZfwzG9o=w80-h80",
+            "Compatibility": "dom: ^2.1.2, boot: ^17.0.2, vitals: ^4.3.1, router-dom: ^5.2.0, scripts: 5.0.0",
+            "Documentation": "https://developers.google.com/search-ads"
+        },
+        {
+            "Name": "YouTube Data API v3",
+            "Description": "The YouTube Data API v3 is an API that provides access to YouTube data, such as videos, playlists,\u00e2\u20ac\u00a6",
+            "About": "The YouTube Data API v3 is an API that provides access to YouTube data, such as videos, playlists, and channels.",
+            "Image": "https://lh3.googleusercontent.com/e6M5VtG7zcegiVOCtZkWEt1RB8sRo5N2iBBDyq0X8N2KofUDwPWl-Lz1LbHgVH8ZfY2XSrkKBl0ak8PBoOYC=w80-h80",
+            "Compatibility": "dom: ^2.1.2, boot: ^17.0.2, vitals: ^4.3.1, router-dom: ^5.2.0, scripts: 5.0.0",
+            "Documentation": "https://developers.google.com/search-ads"
+        },
+        {
+            "Name": "YouTube Analytics API",
+            "Description": "Retrieves your YouTube Analytics data.",
+            "About": "Retrieves your YouTube Analytics data.",
+            "Image": "https://lh3.googleusercontent.com/e6M5VtG7zcegiVOCtZkWEt1RB8sRo5N2iBBDyq0X8N2KofUDwPWl-Lz1LbHgVH8ZfY2XSrkKBl0ak8PBoOYC=w80-h80",
+            "Compatibility": "dom: ^2.1.2, boot: ^17.0.2, vitals: ^4.3.1, router-dom: ^5.2.0, scripts: 5.0.0",
+            "Documentation": "https://developers.google.com/search-ads"
+        },
+        {
+            "Name": "YouTube Reporting API",
+            "Description": "Schedules reporting jobs containing your YouTube Analytics data and downloads the resulting bulk\u00e2\u20ac\u00a6",
+            "About": "Schedules reporting jobs containing your YouTube Analytics data and downloads the resulting bulk data reports in the form of CSV files.",
+            "Image": "https://lh3.googleusercontent.com/e6M5VtG7zcegiVOCtZkWEt1RB8sRo5N2iBBDyq0X8N2KofUDwPWl-Lz1LbHgVH8ZfY2XSrkKBl0ak8PBoOYC=w80-h80",
+            "Compatibility": "dom: ^2.1.2, boot: ^17.0.2, vitals: ^4.3.1, router-dom: ^5.2.0, scripts: 5.0.0",
+            "Documentation": "https://developers.google.com/search-ads"
+        },
+        {
+            "Name": "Google+ API",
+            "Description": "The Google+ API enables developers to build on top of the Google+ platform.",
+            "About": "The Google+ API enables developers to build on top of the Google+ platform.",
+            "Image": "https://lh3.googleusercontent.com/FC0rgAgOPJVbZbsQOmLavRJ-lI2bGVzHKtaBYvSqxWyu7nL8CAjy4uM95zuxOy45VsU3iOc8wvzbQDtTMFJq=w80-h80",
+            "Compatibility": "dom: ^2.1.2, boot: ^17.0.2, vitals: ^4.3.1, router-dom: ^5.2.0, scripts: 5.0.0",
+            "Documentation": "https://developers.google.com/search-ads"
+        },
+        {
+            "Name": "Blogger API v3",
+            "Description": "The Blogger API provides access to posts, comments and pages of a Blogger blog.",
+            "About": "The Blogger API provides access to posts, comments and pages of a Blogger blog.",
+            "Image": "https://lh3.googleusercontent.com/9VkmjOvweRVlyq96wdIjM__odHNDeFMK12BeinPiEqWE2ZG2fbMJzG9os1dmaRdE9eKLZ6DXhjzeldpdVks=w80-h80",
+            "Compatibility": "dom: ^2.1.2, boot: ^17.0.2, vitals: ^4.3.1, router-dom: ^5.2.0, scripts: 5.0.0",
+            "Documentation": "https://developers.google.com/search-ads"
+        },
+        {
+            "Name": "Google+ Domains API",
+            "Description": "The Google+ Domains API enables developers to build on top of the Google+ platform for Google Apps\u00e2\u20ac\u00a6",
+            "About": "The Google+ Domains API enables developers to build on top of the Google+ platform for Google Apps domains.",
+            "Image": "https://lh3.googleusercontent.com/adnwAFtmQG8kvbo4ezZsJor7aVd9OLJ7Biy5x4CnJ30qNbFxKNorIaIiGJH6iK1MactoOXTIvMpGm2kFgL0=w80-h80",
+            "Compatibility": "dom: ^2.1.2, boot: ^17.0.2, vitals: ^4.3.1, router-dom: ^5.2.0, scripts: 5.0.0",
+            "Documentation": "https://developers.google.com/search-ads"
+        },
+        {
+            "Name": "Google People API",
+            "Description": "Provides access to information about profiles and contacts.",
+            "About": "Provides access to information about profiles and contacts.",
+            "Image": "https://lh3.googleusercontent.com/ZXwsXG-7nayXC1_6sTgSero34r9sb20NyLyQ7QmqaHk4yar7W3Wfr487H3_w9j2JyDDbOGzRNIoqNbyfriY=w80-h80",
+            "Compatibility": "dom: ^2.1.2, boot: ^17.0.2, vitals: ^4.3.1, router-dom: ^5.2.0, scripts: 5.0.0",
+            "Documentation": "https://developers.google.com/search-ads"
+        },
+        {
+            "Name": "Google+ Domains API",
+            "Description": "The Google+ Domains API enables developers to build on top of the Google+ platform for Google Apps\u00e2\u20ac\u00a6",
+            "About": "The Google+ Domains API enables developers to build on top of the Google+ platform for Google Apps domains.",
+            "Image": "https://lh3.googleusercontent.com/adnwAFtmQG8kvbo4ezZsJor7aVd9OLJ7Biy5x4CnJ30qNbFxKNorIaIiGJH6iK1MactoOXTIvMpGm2kFgL0=w80-h80",
+            "Compatibility": "dom: ^2.1.2, boot: ^17.0.2, vitals: ^4.3.1, router-dom: ^5.2.0, scripts: 5.0.0",
+            "Documentation": "https://developers.google.com/search-ads"
+        },
+        {
+            "Name": "AdSense Management API",
+            "Description": "The AdSense Management API allows publishers to access their inventory and run earnings and\u00e2\u20ac\u00a6",
+            "About": "The AdSense Management API allows publishers to access their inventory and run earnings and performance reports.",
+            "Image": "https://lh3.googleusercontent.com/CGY8pvVrFxnqpuxNXh-Y9NZlucE3yqgQ9p3evaWeul2rcFiF5O3sbGI9xX-VBJLTQ6awvddABia6Brt6Y7E=w80-h80",
+            "Compatibility": "dom: ^2.1.2, boot: ^17.0.2, vitals: ^4.3.1, router-dom: ^5.2.0, scripts: 5.0.0",
+            "Documentation": "https://developers.google.com/search-ads"
+        },
+        {
+            "Name": "Campaign Manager 360 API",
+            "Description": "Manage your Campaign Manager 360 ad campaigns and reports",
+            "About": "The Campaign Manager 360 API provides programmatic access to information from your Campaign Manager 360 account. It can be used to manage advertising campaigns, report on their effectiveness, and upload data about offline conversions.",
+            "Image": "https://lh3.googleusercontent.com/Zk1YeIWuplt1blSAoZ_oy57MK1SOGjtvPzGtWPrpMuhQWCSfO00YDaej-a4IPr_XqbwVatxsOwwL4-CgojKu=w80-h80",
+            "Compatibility": "dom: ^2.1.2, boot: ^17.0.2, vitals: ^4.3.1, router-dom: ^5.2.0, scripts: 5.0.0",
+            "Documentation": "https://developers.google.com/search-ads"
+        },
+        {
+            "Name": "Ad Exchange Seller API",
+            "Description": "Programmatically access Ad Exchange publisher inventory.",
+            "About": "The Seller API enables you to automate and streamline common reporting tasks. You can view and analyze reporting data from your account, including ad slot settings, and generate global inventory summary reports.",
+            "Image": "https://lh3.googleusercontent.com/Zk1YeIWuplt1blSAoZ_oy57MK1SOGjtvPzGtWPrpMuhQWCSfO00YDaej-a4IPr_XqbwVatxsOwwL4-CgojKu=w80-h80",
+            "Compatibility": "dom: ^2.1.2, boot: ^17.0.2, vitals: ^4.3.1, router-dom: ^5.2.0, scripts: 5.0.0",
+            "Documentation": "https://developers.google.com/search-ads"
+        },
+        {
+            "Name": "Ad Exchange Buyer API II",
+            "Description": "Build applications that interact directly with the DoubleClick Ad Exchange platform.",
+            "About": "Efficiently and creatively manage your large Ad Exchange accounts and campaigns, and maximize return on investment (ROI) across millions of seller sites.",
+            "Image": "https://lh3.googleusercontent.com/Zk1YeIWuplt1blSAoZ_oy57MK1SOGjtvPzGtWPrpMuhQWCSfO00YDaej-a4IPr_XqbwVatxsOwwL4-CgojKu=w80-h80",
+            "Compatibility": "dom: ^2.1.2, boot: ^17.0.2, vitals: ^4.3.1, router-dom: ^5.2.0, scripts: 5.0.0",
+            "Documentation": "https://developers.google.com/search-ads"
+        }
+    ]
+}
