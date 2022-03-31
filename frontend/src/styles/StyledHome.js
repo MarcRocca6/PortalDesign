@@ -23,6 +23,7 @@ const StyledHome = styled.div`
   background-color: grey;
   height: 25vw;
   border-radius: 10px;
+  max-height: 300px;
 }
 
 .bodyHeading {
