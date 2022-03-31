@@ -7,9 +7,21 @@ import Button from 'react-bootstrap/Button';
 import { AiOutlineCheckCircle} from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 
-import "./pages.css"
+const Product = ({ ...props }) => {
 
-const Product = () => {
+  const productName = props.match.params.projectid.replaceAll("+", " ");
+
+  const descriptorStyles = [
+    [
+      'Unified UI',
+      'Pre-trained APIs',
+      'End-to-end integration',
+    ],[
+      'Open source frameworks',
+      'Workbench',
+      'Learning Containers',
+    ]
+  ]
 
   return (
     <div style={pageContent}>
@@ -19,41 +31,28 @@ const Product = () => {
           <Row>
             <Col xs={5}>
               
-              <h1 style={nameHeading}>Vertex AI</h1>
+              <h1 style={nameHeading}>{productName}</h1>
               <h3 style={smallHeading}>Build, deploy, and scale ML models faster, with pre-trained and custom tooling within a unified artificial intelligence platform.</h3>
-              
               <h3 style ={smallBoldHeading}>A unified UI for the entire ML workflow</h3>
-              <h3 style ={smallNormal}>Vertex AI brings together the Google Cloud services for building ML under one, unified UI and API. In Vertex AI, you can now easily train and compare models using AutoML or custom code training and all your models are stored in one central model repository. These models can now be deployed to the same endpoints on Vertex AI.</h3>
+              <h3 style ={smallNormal}>{productName} brings together the Google Cloud services for building ML under one, unified UI and API. In {productName}, you can now easily train and compare models using AutoML or custom code training and all your models are stored in one central model repository. These models can now be deployed to the same endpoints on Vertex AI.</h3>
 
-              <Container>
-                <Row style={assetRow}>
-                  <Col style={assetCol}>
-                    <AiOutlineCheckCircle style={{height: '100%', 'color': 'green'}}/>
-                    <div style={{fontSize: '12px', paddingLeft: '5px', position: 'relative', top: '25%', textAlign: 'left', height: '100%'}}> Unified UI</div>
-                  </Col>
-                  <Col style={assetCol}>
-                    <AiOutlineCheckCircle style={{height: '100%', 'color': 'green'}}/>
-                    <div style={{fontSize: '12px', paddingLeft: '5px', position: 'relative', top: '25%', textAlign: 'left', height: '100%'}}> Pre-trained APIs</div>
-                  </Col>
-                  <Col style={assetCol}>
-                    <AiOutlineCheckCircle style={{height: '100%', 'color': 'green'}}/>
-                    <div style={{fontSize: '12px', paddingLeft: '5px', position: 'relative', top: '25%', textAlign: 'left', height: '100%'}}> End-to-end integration</div>
-                  </Col>
-                </Row>
-                <Row style={assetRow}>
-                  <Col style={assetCol}>
-                    <AiOutlineCheckCircle style={{height: '100%', 'color': 'green'}}/>
-                    <div style={{fontSize: '12px', paddingLeft: '5px', position: 'relative', top: '25%', textAlign: 'left', height: '100%'}}> Open source frameworks</div>
-                  </Col>
-                  <Col style={assetCol}>
-                    <AiOutlineCheckCircle style={{height: '100%', 'color': 'green'}}/>
-                    <div style={{fontSize: '12px', paddingLeft: '5px', position: 'relative', top: '25%', textAlign: 'left', height: '100%'}}> Workbench</div>
-                  </Col>
-                  <Col style={assetCol}>
-                    <AiOutlineCheckCircle style={{height: '100%', 'color': 'green'}}/>
-                    <div style={{fontSize: '12px', paddingLeft: '5px', position: 'relative', top: '25%', textAlign: 'left', height: '100%'}}> Learning Containers	</div>
-                  </Col>
-                </Row>
+              <Container style={descriptorContainer}>
+                {descriptorStyles.map((descriptor, index) =>
+                  <Row>
+                    <Col style={assetCol}>
+                      <AiOutlineCheckCircle style={{height: '20px', 'color': 'green'}}/>
+                      <div style={descriptorStyle}>{descriptor[0]}</div>
+                    </Col>
+                    <Col style={assetCol}>
+                      <AiOutlineCheckCircle style={{height: '20px', 'color': 'green'}}/>
+                      <div style={descriptorStyle}>{descriptor[1]}</div>
+                    </Col>
+                    <Col style={assetCol}>
+                      <AiOutlineCheckCircle style={{height: '20px', 'color': 'green'}}/>
+                      <div style={descriptorStyle}>{descriptor[2]}</div>
+                    </Col>
+                  </Row>
+                )}
               </Container>
 
               <Row style = {headButtonRow}>
@@ -68,7 +67,7 @@ const Product = () => {
             <Col >
               <Link to="/news" role="button">
                 <img 
-                  src='Graph.png'
+                  src='https://portal-redesign.s3.amazonaws.com/Assets/Graph.png'
                   alt="logo"
                   style={newsBox}
                   />
@@ -102,7 +101,6 @@ const bodyHeading =
   color: '#000000',
   paddingTop: '60px',
 }
-
 const nameHeading = 
 {
   bodyHeading,
@@ -113,7 +111,6 @@ const nameHeading =
   Zindex:-1,
   position: 'relative',
 }
-
 const smallHeading = 
 {
   bodyHeading,
@@ -123,7 +120,6 @@ const smallHeading =
   color: 'rgba(0,0,0,0.6)',
   textAlign: 'left',
 }
-
 const smallBoldHeading =
 {
   smallHeading,
@@ -133,7 +129,6 @@ const smallBoldHeading =
   fontWeight: '600',
   paddingLeft: '12px',
 }
-
 const smallNormal = 
 {
   smallHeading,
@@ -143,11 +138,11 @@ const smallNormal =
   paddingLeft: '12px',
   textAlign: 'left',
 }
-
 const pageContent =
 {
   display: 'flex',
   flexGrow: 1,
+  paddingBottom: '200px',
   alignItems: 'center',
   flexDirection: 'column',
   justifyContent: 'center',
@@ -155,13 +150,6 @@ const pageContent =
   height: '90vh',
   background: 'rgb(245 245 245)',
 }
-
-const assetRow =
-{
-  // padding: '50px',
-
-}
-
 const assetCol = 
 {
   paddingLeft: '30px',
@@ -169,19 +157,11 @@ const assetCol =
   paddingRight: '30px',
   display: 'flex',
 }
-
-const assetColContent =
-{
-  height: '80px',
-  cursor: 'pointer',
-  background: 'rgba(200,200,200,0.7)'
-}
-
 const headButtonRow =
 {
   paddingTop: '60px',
+  width: '40vw',
 }
-
 const headButtons1 = 
 {
   fontSize: "12px",
@@ -191,7 +171,6 @@ const headButtons1 =
   filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))',
   backgroundColor: 'grey',
 }
-
 const headButtons2 = 
 {
   fontSize: "12px",
@@ -201,30 +180,29 @@ const headButtons2 =
   filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))',
   backgroundColor: '#A768CF',
 }
-
-
 const newsBox = 
 {
   flex: 1,
-  // marginBottom: '-70px',
-  width: '640px',
-  marginTop: '50px',
-  paddingLeft: '155px',
+  width: '540px',
   paddingRight: '-40px',
-  height: '70%',
-  
-}
-
-const leftnewsBox = 
-{
-  backgroundColor: "rgb(130,230,230)",
-  flex: 1,
-  height: '38vh',
-  marginBottom: '-70px',
   position: 'absolute',
-  width: '740px',
-  marginTop: '-30px',
-  left: 0,
-  filter: 'blur(4px)',
-  opacity: 0.3,
+  margin: 'auto',
+  marginTop: '70px',
+  marginLeft: '40px',
+}
+const descriptorStyle = 
+{
+  fontSize: '12px', 
+  paddingLeft: '5px', 
+  position: 'relative', 
+  top: '25%', 
+  textAlign: 'left', 
+  height: '100%',
+  marginTop: 'auto'
+}
+const descriptorContainer = 
+{
+  width: '400px',
+  flexDirection: 'row',
+  display: 'flex'
 }

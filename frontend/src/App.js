@@ -5,9 +5,11 @@ import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import './App.css';
 
 import Login from './pages/Login';
+import Register from './pages/Register';
 import Home from './pages/Home';
 import Product from './pages/Product';
 import Assets from './pages/Assets';
+import ExploreProjects from './pages/ExploreProjects';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import SecureRoute from './SecureRoute';
@@ -26,7 +28,7 @@ function App () {
 
   return (
     <AuthProvider value={authDetails}>
-      <BrowserRouter>
+      <BrowserRouter style={{background: '#ededed'}}>
         <NavBar authDetails={authDetails}/>
         <Switch>
           <Route
@@ -35,9 +37,16 @@ function App () {
               return <Login {...props} setAuth={setAuth} />;
             }}
           />
-          <SecureRoute exact path='/assets' component={Assets}/>
+          <Route
+            path='/register'
+            render={(props) => {
+              return <Register {...props} setAuth={setAuth} />;
+            }}
+          />
+          <Route exact path='/assets' component={Assets}/>
           <Route exact path='/' component={Home}/>
-          <Route exact path='/product' component={Product}/>
+          <Route exact path='/explore-projects' component={ExploreProjects}/>
+          <Route exact path='/product/:projectid' component={Product}/>
         </Switch>
         <Footer setAuth={setAuth}/>
       </BrowserRouter>

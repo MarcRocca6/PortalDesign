@@ -6,8 +6,6 @@ import Button from 'react-bootstrap/Button';
 
 import { Link } from 'react-router-dom';
 
-import "./NavBar.css"
-
 // import { Link, useHistory } from 'react-router-dom';
 
 const Footer = (props) => {
@@ -54,14 +52,14 @@ export default Footer;
 const navBar =
 {
     display: 'block',
-    position: 'absolute',
     bottom: '0',
     height: '6vh',
     width: '100%',
-    backgroundColor: 'rgb(237, 237, 237)',
+    backgroundColor: '#f5f5f5',
     border: '1px solid #fff',
     padding: '0px',
     maxWidth: '100%',
+    position: 'fixed',
 }
   
 const navContainer = 
@@ -92,6 +90,7 @@ const navText =
   fontStyle: 'normal',
   lineHeight: '18px',
   fontSize: '14px',
+  fontFamily: 'Montserrat',
 }
 const blackLogoText = 
 {
@@ -101,6 +100,7 @@ const blackLogoText =
   fontWeight: '400',
   fontStyle: 'normal',
   lineHeight: '18px',
+  fontFamily: 'Montserrat',
 }
 const pinkLogoText =
 {
@@ -113,6 +113,7 @@ const pinkLogoText =
   textAlign: 'center',
   letterSpacing: '-0.015em',
   color: '#8D37C4',
+  fontFamily: 'Montserrat',
 }
 
 const navTextLink =

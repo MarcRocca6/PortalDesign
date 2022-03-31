@@ -3,15 +3,17 @@ import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 
-import { BsPersonCircle} from 'react-icons/bs';
+import { BsPersonCircle, BsBoxArrowInRight} from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 
-import "./NavBar.css"
+import { StyledNavBar } from '../styles';
 
 // import { Link, useHistory } from 'react-router-dom';
 
 const NavBar = ({ authDetails, ...props }) => {
+
   var loggedIn = false;
+  console.log(authDetails)
   if (!authDetails || authDetails == null || authDetails === 'undefined') {
     loggedIn = false
   } else { loggedIn = true}
@@ -47,86 +49,80 @@ const NavBar = ({ authDetails, ...props }) => {
   // }
 
   return (
-    <Navbar style={navContent} collapseOnSelect expand="lg" bg="white" variant="white">
-      <Container>
-        <Link to="/" role="button" style={navTextLink}>
-          <div style={navLogoContainer}>
-            <strong style={blackLogoText}>myWizard AiOps</strong>
-            <strong style={pinkLogoText}>Portal</strong>
-          </div>
-        </Link>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto"></Nav>
+    <StyledNavBar>
+      <Navbar bg="light" expand="lg">
+        <Container>
 
-          <Nav>
+          <Link to="/" role="button" style={navTextLink}>
+            <div style={navLogoContainer}>
+              <strong style={blackLogoText}>myWizard AiOps</strong>
+              <strong style={pinkLogoText}>Portal</strong>
+            </div>
+          </Link>
 
-            <Link to="/" role="button" style={navTextLink}>
-              <strong class={"enlargeSmall"} style={navText}>Home</strong>
-            </Link>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto" id="responsive-navbar-nav">
 
-            <Link to="/about" role="button" style={navTextLink}>
-              <strong class={"enlargeSmall"}style={navText}>About</strong>
-            </Link>
+              <Link to="/" role="button">
+                  <strong class="enlargeSmall">Home</strong>
+              </Link>
+              <Link to="/assets" role="button">
+                  <strong class="enlargeSmall">Search Assets</strong>
+              </Link>
+              <Link to="/explore-projects" role="button">
+                  <strong class="enlargeSmall">Search Projects</strong>
+              </Link>
+              
+              {/* {loggedIn
+                  ? <>
+                      <Link to="/assets" role="button">
+                        <strong class="enlargeSmall">Assets</strong>
+                      </Link>
+                      <Link to="/support-requests" role="button">
+                        <strong class="enlargeSmall">Support Request</strong>
+                      </Link>
+                    </>
+                  : <Link to="/login" role="button">
+                      <strong class="enlargeSmall">Log In</strong>
+                    </Link>
+              } */}
 
-            {loggedIn
-              ? <>
-                  <Link to="/assets" role="button" style={navTextLink}>
-                    <strong class={"enlargeSmall"}style={navText}>AIOps Assets</strong>
-                  </Link>
-                  <Link to="/support-requests" role="button" style={navTextLink}>
-                    <strong class={"enlargeSmall"} style={navText}>Support Request</strong>
-                  </Link>
-                </>
-              : <Link to="/login" role="button" style={navTextLink}>
-                  <strong class={"enlargeSmall"} style={navText}>Log In</strong>
-                </Link>
-            }
 
-           
+            </Nav>
 
-            <Link to="/profile" role="button" style={navTextLink}>
-              <BsPersonCircle style={profileIcon}/>
-            </Link>
+            <Nav>
+              {loggedIn
+                  ? <>
+                      <Link to="/profile" role="button" className="right-navlink">
+                        <BsPersonCircle class="d"/>
+                        {/* <strong id="navLogin">Login</strong> */}
+                      </Link>
+                    </>
+                  : <>
+                      <Link to="/login" role="button" className="right-navlink">
+                        <BsBoxArrowInRight class="profileIcon"/>
+                      </Link>
+                    </>
+              }
+            </Nav>
 
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </StyledNavBar>
   );
 }
 
 export default NavBar;
 
-const navContent = 
-{
-  height: '7vh',
-}
+
 const navLogoContainer =
 {
   height: '100%',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-}
-const profileIcon =
-{
-  color: '#8D37C4',
-  fontSize: '35px',
-  paddingLeft: '5px',
-  paddingRight: '5px',
-  height: '100%',
-}
-const navText =
-{
-  paddingLeft: '8px',
-  paddingRight: '8px',
-  textDecoration: 'none',
-  color: '#8D37C4',
-  fontWeight: '700',
-  fontStyle: 'normal',
-  lineHeight: '18px',
-  fontSize: '14px',
 }
 const blackLogoText = 
 {
@@ -136,6 +132,7 @@ const blackLogoText =
   fontWeight: '400',
   fontStyle: 'normal',
   lineHeight: '18px',
+  paddingRight: 0,
 }
 const pinkLogoText =
 {
@@ -148,8 +145,8 @@ const pinkLogoText =
   textAlign: 'center',
   letterSpacing: '-0.015em',
   color: '#8D37C4',
+  padding: 0,
 }
-
 const navTextLink =
 {
   paddingLeft: '15px',
